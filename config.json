@@ -1,0 +1,9 @@
+{
+    "hosts": [
+        "8.8.8.8", 
+        "1.1.1.1", 
+        "google.com", 
+        "github.com"
+    ],
+    "log_file": "checker.log"
+}
