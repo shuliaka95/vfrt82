@@ -23,7 +23,7 @@ def run_daemon():
     while True:
         for host in hosts:
             try:
-                # В Void Linux ping находится в /usr/bin/ping
+                # Выполняем одну проверку (1 пакет) с таймаутом ожидания 1 сек
                 res = subprocess.run(['ping', '-c', '1', '-W', '1', host], 
                                      capture_output=True, text=True)
                 if res.returncode == 0:
